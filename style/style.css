@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,7 +8,7 @@
 }
 
 /* shaired style  */
-.btn-primary{
+.btn-primary {
     padding: 15px 20px;
     border-radius: 7px;
     border: none;
@@ -17,95 +18,108 @@
 
 /* style a heading sactation  */
 
-.navber{
+.navber {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
 
 }
-.navber-items{
+
+.navber-items {
     display: flex;
     list-style: none;
 }
-.navber-items>li{
+
+.navber-items>li {
     margin-right: 20px;
 }
-.brand-container{
+
+.brand-container {
     max-width: 700px;
     margin: 80px auto;
-     
+
 }
-.brand-container h1{
+
+.brand-container h1 {
     text-align: center;
     font-size: 40px;
 }
-.btn-container{
+
+.btn-container {
     display: flex;
     justify-content: center;
 }
-.brand-container>p{
+
+.brand-container>p {
     margin: 15px 0px;
 }
 
 /* style banner section  */
-.banner{
+.banner {
     padding: 20px;
 }
-.banner img{
+
+.banner img {
     width: 100%;
 }
 
 /* style a featured section  */
-.featured{
-    display:flex;
+.featured {
+    display: flex;
     margin-top: 50px;
     padding: 20px;
     gap: 50px;
     justify-content: center;
     align-items: center;
 }
-.featured-image-container{
+
+.featured-image-container {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }
-.featured-image-container img{
+
+.featured-image-container img {
     width: 290px;
 }
-.featured-text-container h1{
+
+.featured-text-container h1 {
     font-size: 40px;
 }
-.featured-text-container p{
-    margin:20px 0px;
+
+.featured-text-container p {
+    margin: 20px 0px;
 
 
 }
 
 /* style a enjoy section  */
-.enjoy-containerss{
+.enjoy-containerss {
     display: flex;
     justify-content: space-between;
     /* align-items: center; */
     gap: 90px;
     padding: 20px;
 }
-.enjoy-items{
+
+.enjoy-items {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin-top: 20px;
     padding: 30px;
     border-radius: 10px;
 }
 
-.enjoy-image img{
+.enjoy-image img {
     height: 700px;
     max-width: 600px;
 }
 
-.love-container p{
+.love-container p {
     margin: 20px 0px;
 }
-.alternative-image{
+
+.alternative-image {
     background-color: rgb(230, 144, 16);
     max-width: 260px;
     padding: 25px;
@@ -116,33 +130,121 @@
 }
 
 /* some facts items  */
-.facts{
+.facts {
     padding: 20px;
 }
 
 
 /* style a acchivement style  */
-.acchivement-container{
+.acchivement-container {
     display: flex;
     justify-content: space-around;
     margin-top: 30px;
 }
-.acchivement-items{
+
+.acchivement-items {
     border: 2px solid gold;
     padding: 30px;
 }
 
 /* style a sponspors  */
-.sponspors-container{
+.sponspors-container {
     display: flex;
     justify-content: space-around;
     margin-top: 40px;
 }
 
 /* style a footer container  */
-.footer-container{
+.footer-container {
     background-color: bisque;
     padding: 30px;
     text-align: center;
     margin-top: 50px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width:576px) {
+    .navber {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .navber-items {
+        flex-direction: column;
+    }
+
+    .brand-container {
+        max-width: 700px;
+        margin: 10px auto;
+        padding: 10px;
+
+    }
+
+    .brand-container h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .btn-container {
+        padding: 5px;
+    }
+
+    .featured {
+        flex-direction: column;
+        margin-top: 50px;
+        padding: 20px;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .featured-image-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+
+    }
+
+    .featured-image-container img {
+        width: auto;
+    }
+
+    .featured-text-container h1 {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .featured-text-container p {
+        margin: 10px 0px;
+        padding: 10px;
+
+    }
+
+    .enjoy-containerss {
+        flex-direction: column;
+    }
+
+    
+
+    .enjoy-image img {
+         display: none;
+    }
+        .alternative-image {
+            display: none;
+        }
+                .acchivement-container {
+                  flex-direction: column;
+                }
+        
+                .acchivement-items {
+                    border: 2px solid gold;
+                    padding: 10px;
+                }
+                .sponspors-container{
+                    flex-direction: column;
+                    
+                }
 }
