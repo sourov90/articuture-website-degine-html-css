@@ -114,3 +114,20 @@
     margin-top: -90px;
     margin-left: -50px;
 }
+
+/* some facts items  */
+.facts{
+    padding: 20px;
+}
+
+
+/* style a acchivement style  */
+.acchivement-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.acchivement-items{
+    border: 2px solid gold;
+    padding: 30px;
+}
