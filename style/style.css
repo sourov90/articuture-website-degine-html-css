@@ -131,3 +131,18 @@
     border: 2px solid gold;
     padding: 30px;
 }
+
+/* style a sponspors  */
+.sponspors-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+/* style a footer container  */
+.footer-container{
+    background-color: bisque;
+    padding: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
